@@ -1,0 +1,126 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: white;
+    padding: 30px;
+}
+
+.display{
+    font-size: 5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: hsl(0, 0%, 30%);
+    text-shadow: 2px 2px 2px hwb(0 0% 100% / 0.756);
+    margin-bottom: 25px;
+}
+
+.controls button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.start-button {
+    background-color: hsla(115, 100%, 40%);
+}
+.start-button:hover {
+    background-color: hsla(115, 100%, 35%);
+}
+
+.stop-button {
+    background-color: hsla(10, 90%, 50%);
+}
+.stop-button:hover {
+    background-color: hsla(10, 90%, 45%);
+}
+
+.reset-button {
+    background-color: hsla(205, 90%, 60%);
+}
+.reset-button:hover {
+    background-color: hsla(205, 90%, 55%);
+}
+
+.lap-button {
+    background-color: hsla(0, 0%, 16%, 0.773);
+}
+.lap-button:hover {
+    background-color: hsla(0, 0%, 16%, 0.773);
+}
+
+.lap-list {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 20px;
+    text-align: center;
+    max-height: 380px;
+    overflow-y: auto;
+  }
+  
+  table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    font-size: x-large;
+    background-color: #2f2f2f85;
+    color: white;
+  }
+  
+  td {
+    font-size: large;
+  }
+  
+  tr:hover {
+    background-color: #d2d2d290;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .stopwatch {
+      padding: 15px;
+    }
+  
+    .display {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+  
+    .controls button {
+      font-size: 1.2rem;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    th,
+    td {
+      font-size: 0.8rem;
+      padding: 8px;
+    }
+  }
